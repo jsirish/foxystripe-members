@@ -2,7 +2,6 @@
 
 namespace Dynamic\FoxyStripeMembers;
 
-
 use Symbiote\MemberProfiles\Pages\MemberProfilePage;
 
 /*

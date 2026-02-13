@@ -67,8 +67,7 @@ class FoxyCartMemberProfilePageController extends MemberProfilePageController
             }
 
             return $this->redirect($this->Link('afterregistration'));
-        }
-        else {
+        } else {
             return $this->redirectBack();
         }
     }

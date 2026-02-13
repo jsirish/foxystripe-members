@@ -22,11 +22,9 @@ class MemberLandingPageController extends \PageController
     {
         if (Security::getCurrentUser()) {
             return true;
-        }
-        elseif ($MemberPage = FoxyCartMemberProfilePage::get()->First()) {
+        } elseif ($MemberPage = FoxyCartMemberProfilePage::get()->First()) {
             return $this->redirect($MemberPage->Link());
-        }
-        else {
+        } else {
             return Security::permissionFailure($this, _t(
                 'AccountPage.CANNOTCONFIRMLOGGEDIN',
                 'Please login to view this page.'
